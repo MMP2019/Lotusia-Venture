@@ -26,18 +26,21 @@ export default function LotusiaVentureLanding() {
   return (
     <div className="min-h-screen w-full scroll-smooth" style={{ background: light }}>
       <header className="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/60 bg-white/70 border-b border-black/5">
-        <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-          <a href="#home" className={\`font-semibold tracking-wide \${primary}\`}>Lotusia Venture</a>
-          <div className="hidden gap-6 sm:flex text-sm">
-            <a href="#about" className="hover:opacity-70">About</a>
-            <a href="#focus" className="hover:opacity-70">Focus</a>
-            <a href="#roadmap" className="hover:opacity-70">Roadmap</a>
-            <a href="#governance" className="hover:opacity-70">Governance</a>
-            <a href="#contact" className="hover:opacity-70">Contact</a>
-          </div>
-          <a href="#contact" className={\`\${primaryBg} text-white rounded-xl px-4 py-2 text-sm shadow\`}>Enquire</a>
-        </nav>
-      </header>
+  <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+    <a href="#home" className={`font-semibold tracking-wide ${primary}`}>Lotusia Venture</a>
+
+    <div className="hidden gap-6 sm:flex text-sm">
+      <a href="#about" className="hover:opacity-70">About</a>
+      <a href="#focus" className="hover:opacity-70">Focus</a>
+      <a href="#roadmap" className="hover:opacity-70">Roadmap</a>
+      <a href="#governance" className="hover:opacity-70">Governance</a>
+      <a href="#contact" className="hover:opacity-70">Contact</a>
+    </div>
+
+    <a href="#contact" className={`${primaryBg} text-white rounded-xl px-4 py-2 text-sm shadow`}>Enquire</a>
+  </nav>
+</header>
+
 
       <section id="home" className="relative">
         <div className="mx-auto max-w-6xl px-4 py-20">
