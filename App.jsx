@@ -27,8 +27,7 @@ export default function LotusiaMinimal() {
             Integrity in Growth
           </h1>
           <p className="mt-4 max-w-2xl text-slate-600">
-            Melbourne-based hospitality group focused on introducing and scaling premium café brands across Victoria —
-            beginning with % Arabica — through disciplined operations and thoughtful design.
+            Melbourne-based hospitality group focused on introducing and scaling premium café brands across Victoria — through disciplined operations and thoughtful design.
           </p>
           <div className="mt-8 flex items-center gap-3">
             <a href="#contact" className={primaryBg + " text-white rounded-lg px-5 py-3"}>Email us</a>
