@@ -10,9 +10,9 @@ export default function LotusiaMinimal() {
     <div className="min-h-screen w-full text-slate-900" style={{ background: bg }}>
       {/* Nav (simple) */}
       <header className="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-black/5">
-        <nav className="mx-auto max-w-5xl px-4 py-3 flex items-center justify-between">
+        <nav className="mx-auto max-w-5xl px-4 py-4 md:py-5 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Lotusia Venture" className="h-8 w-8 object-contain" />
+            <img src="/logo.png" alt="Lotusia Venture" className="h-10 md:h-12 lg:h-14 w-auto object-contain" />
             <span className={"font-semibold " + primary}>Lotusia Venture</span>
           </div>
           <a href="#contact" className={primaryBg + " text-white rounded-lg px-4 py-2 text-sm"}>Contact</a>
@@ -22,7 +22,7 @@ export default function LotusiaMinimal() {
       {/* Hero */}
       <section id="home">
         <div className="mx-auto max-w-5xl px-4 py-16 md:py-24 grid place-items-center text-center">
-          <img src="/logo.png" alt="Lotusia Venture logo" className="h-20 w-20 object-contain opacity-90" />
+          <img src="/logo.png" alt="Lotusia Venture logo" className="h-28 md:h-36 lg:h-44 w-auto object-contain opacity-90" />
           <h1 className={"mt-6 text-4xl md:text-5xl font-semibold leading-tight " + primary}>
             Integrity in Growth
           </h1>
