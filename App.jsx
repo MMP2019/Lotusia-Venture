@@ -27,7 +27,7 @@ export default function LotusiaMinimal() {
             Integrity in Growth
           </h1>
           <p className="mt-4 max-w-2xl text-slate-600">
-            Melbourne-based hospitality group focused on introducing and scaling premium café brands across Victoria — through disciplined operations and thoughtful design.
+            Melbourne-based hospitality group focused on introducing and scaling premium retail brands across Victoria — through disciplined operations and thoughtful design.
           </p>
           <div className="mt-8 flex items-center gap-3">
             <a href="#contact" className={primaryBg + " text-white rounded-lg px-5 py-3"}>Email us</a>
@@ -36,48 +36,59 @@ export default function LotusiaMinimal() {
         </div>
       </section>
 
-      {/* About (one concise block) */}
+      {/* ABOUT (concise) */}
       <section id="about" className="border-y border-black/5 bg-white">
         <div className="mx-auto max-w-5xl px-4 py-14">
           <h2 className={"text-2xl font-semibold " + primary}>About</h2>
           <p className="mt-4 max-w-3xl text-slate-700">
             Lotusia Venture Pty Ltd is a retail hospitality operator and investor. We specialise in
-            multi-site franchise execution: site selection, lease negotiation, fit-out, recruitment,
-            training and ongoing performance management. Our approach balances guest experience with
-            robust unit economics.
+            multi-site franchise execution across Victoria, balancing guest experience with robust unit
+            economics through standardised SOPs, training and financial discipline.
           </p>
         </div>
       </section>
 
-      {/* What we do (3 crisp pillars) */}
-      <section id="capabilities">
+      {/* VISION & MISSION (replaces “What we do”) */}
+      <section id="vision">
         <div className="mx-auto max-w-5xl px-4 py-14">
-          <h2 className={"text-2xl font-semibold " + primary}>What we do</h2>
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
-            <Card title="Master Franchise Operations"
-                  body="Standardised SOPs, training, and quality control for consistent service across locations." />
-            <Card title="New Store Development"
-                  body="End-to-end delivery: site ID, design, construction management, launch and ramp-up." />
-            <Card title="Financial Discipline"
-                  body="Planning, cost control and reporting to protect margins and reinvest for growth." />
+          <h2 className={"text-2xl font-semibold " + primary}>Vision & Mission</h2>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            <div className="rounded-xl border border-black/10 bg-white p-6">
+              <h3 className="font-semibold">Vision</h3>
+              <p className="mt-2 text-sm text-slate-700">
+                To establish and nurture globally admired café brands across Victoria—starting with % Arabica—
+                through world-class operations, authentic experiences and sustainable growth.
+              </p>
+            </div>
+            <div className="rounded-xl border border-black/10 bg-white p-6">
+              <h3 className="font-semibold">Mission</h3>
+              <p className="mt-2 text-sm text-slate-700">
+                To deliver consistently high-quality hospitality, empower teams to excel, and build long-term
+                partnerships with leading global brands while protecting strong unit economics.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Roadmap (compact) */}
-      <section id="roadmap" className="border-y border-black/5 bg-white">
+      {/* KEY PERSONNEL (replaces “Roadmap”) */}
+      <section id="team" className="border-y border-black/5 bg-white">
         <div className="mx-auto max-w-5xl px-4 py-14">
-          <h2 className={"text-2xl font-semibold " + primary}>Roadmap</h2>
-          <ul className="mt-6 grid gap-4 md:grid-cols-4 text-sm">
-            <Step when="Q4 2025" what="Secure flagship VIC site; appoint fit-out partners." accent={accent} />
-            <Step when="Q1 2026" what="Open 1–2 hero stores; establish training hub." accent={accent} />
-            <Step when="Q3 2026" what="CBD corridor expansion; optimise supply chain." accent={accent} />
-            <Step when="2027"   what="Scale to 6–8 stores with resilient unit economics." accent={accent} />
-          </ul>
+          <h2 className={"text-2xl font-semibold " + primary}>Key Personnel</h2>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            <Person name="Vathana Poev" role="Managing Director"
+                    blurb="Franchise operations, investment strategy and brand development; led two Sharetea stores from inception to multi-million-dollar operations." />
+            <Person name="Leakana Chan" role="Operations Manager"
+                    blurb="7+ years in F&B franchise ops; culture building, training, compliance and consistent guest experience." />
+            <Person name="Sambath Kour" role="Operations Team Leader"
+                    blurb="Leadership and compliance background; focused on reliable store execution and team performance." />
+            <Person name="Thing Chau, CPA" role="Finance & Administration Lead"
+                    blurb="Payroll and financial oversight; forecasting, cost control and regulatory compliance with external accountants." />
+          </div>
         </div>
       </section>
 
-      {/* Contact (single CTA) */}
+      {/* CONTACT */}
       <section id="contact">
         <div className="mx-auto max-w-5xl px-4 py-14">
           <div className="rounded-2xl border border-black/10 bg-white p-8 text-center">
@@ -101,22 +112,14 @@ export default function LotusiaMinimal() {
   );
 }
 
-/* ——— small, reusable presentational pieces ——— */
+/* ——— tiny presentational components ——— */
 
-function Card(props) {
+function Person(props) {
   return (
     <div className="rounded-xl border border-black/10 bg-white p-6">
-      <h3 className="font-semibold">{props.title}</h3>
-      <p className="mt-2 text-sm text-slate-700">{props.body}</p>
+      <h3 className="font-semibold">{props.name}</h3>
+      <div className="text-xs text-slate-500">{props.role}</div>
+      <p className="mt-2 text-sm text-slate-700">{props.blurb}</p>
     </div>
-  );
-}
-
-function Step(props) {
-  return (
-    <li className="rounded-xl border border-black/10 bg-white p-5">
-      <div className={props.accent + " text-xs font-semibold"}>{props.when}</div>
-      <div className="mt-2 text-slate-700">{props.what}</div>
-    </li>
   );
 }
