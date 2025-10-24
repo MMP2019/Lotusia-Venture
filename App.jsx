@@ -27,7 +27,7 @@ export default function LotusiaMinimal() {
             Integrity in Growth
           </h1>
           <p className="mt-4 max-w-2xl text-slate-600">
-            Melbourne-based hospitality group focused on introducing and scaling premium retail brands across Victoria — through disciplined operations and thoughtful design.
+            Melbourne based hospitality group focused on introducing and scaling premium retail brands across Victoria — through disciplined operations and thoughtful design.
           </p>
           <div className="mt-8 flex items-center gap-3">
             <a href="#contact" className={primaryBg + " text-white rounded-lg px-5 py-3"}>Email us</a>
@@ -42,7 +42,7 @@ export default function LotusiaMinimal() {
           <h2 className={"text-2xl font-semibold " + primary}>About</h2>
           <p className="mt-4 max-w-3xl text-slate-700">
             Lotusia Venture Pty Ltd is a retail hospitality operator and investor. We specialise in
-            multi-site franchise execution across Victoria, balancing guest experience with robust unit
+            multi site franchise execution across Victoria, balancing guest experience with robust unit
             economics through standardised SOPs, training and financial discipline.
           </p>
         </div>
@@ -56,14 +56,14 @@ export default function LotusiaMinimal() {
             <div className="rounded-xl border border-black/10 bg-white p-6">
               <h3 className="font-semibold">Vision</h3>
               <p className="mt-2 text-sm text-slate-700">
-                To establish and nurture globally admired café brands across Victoria—starting with % Arabica—
-                through world-class operations, authentic experiences and sustainable growth.
+                To establish and nurture globally admired brands across Victoria through
+                world class operations, authentic experiences and sustainable growth.
               </p>
             </div>
             <div className="rounded-xl border border-black/10 bg-white p-6">
               <h3 className="font-semibold">Mission</h3>
               <p className="mt-2 text-sm text-slate-700">
-                To deliver consistently high-quality hospitality, empower teams to excel, and build long-term
+                To deliver consistently high quality hospitality, empower teams to excel, and build long term
                 partnerships with leading global brands while protecting strong unit economics.
               </p>
             </div>
